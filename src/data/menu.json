@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "headTitle1": "System",
+      "headTitle2": "Send SMS, Generate Bills & report",
+      "type": "headtitle"
+    },
+    {
+      "path": "/dashboard",
+      "title": "Dashboard",
+      "icon": "home",
+      "type": "link",
+      "active": true
+    },
+    {
+      "title": "Messaging",
+      "icon": "mail",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/messaging/send",
+          "title": "Send SMS",
+          "type": "link"
+        },
+        {
+          "path": "/messaging/schedule-sms",
+          "title": "Schedule SMS",
+          "type": "link"
+        }
+
+      ]
+    },
+    {
+      "path": "/sms/template",
+      "title": "SMS Template",
+      "icon": "clipboard",
+      "type": "link",
+      "active": false
+    },
+    {
+      "path": "/sms/price-and-coverage",
+      "title": "Price & Coverage",
+      "icon": "dollar-sign",
+      "type": "link",
+      "active": false
+    },
+    {
+      "title": "Address Book",
+      "icon": "phone-call",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/address-book/contact-group",
+          "title": "Contact Group",
+          "type": "link"
+        },
+        {
+          "path": "/address-book/manage-contact",
+          "title": "Manage Contact",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "path": "/sms/billing",
+      "title": "Billing",
+      "icon": "book",
+      "type": "link",
+      "active": false
+    },
+    {
+      "title": "Report",
+      "icon": "printer",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/report/today",
+          "title": "Today's Delivery Report",
+          "type": "link"
+        },
+        {
+          "path": "/report/all",
+          "title": "All Delivery Report",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "headTitle1": "Profile",
+      "headTitle2": "Privacy, Security & Account",
+      "type": "headtitle"
+    },
+    {
+      "path": "/user/change-password",
+      "title": "Change Password",
+      "icon": "lock",
+      "type": "link",
+      "active": false
+    },
+    {
+      "headTitle1": "Developers",
+      "headTitle2": "Api  Key, Credential and Documentation",
+      "type": "headtitle"
+    },
+    {
+      "path": "/developers/api-documentation",
+      "title": "Api Documentation",
+      "icon": "lock",
+      "type": "link",
+      "active": false
+    },
+    {
+      "path": "/auth/logout",
+      "title": "Logout",
+      "icon": "log-in",
+      "type": "link",
+      "active": false
+    }
+  ]
+}
+
