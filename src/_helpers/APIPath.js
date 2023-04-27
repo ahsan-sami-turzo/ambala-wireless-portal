@@ -1,7 +1,6 @@
 // var host = "https://dev-api.ambalawireless.com/api/v1/";
-// var host = "https://api.ambalawireless.com/api/v1/";
-
-var host = "http://api.dawlatplus.com/api/v1/";
+var host = "https://api.ambalawireless.com/api/v1/";
+// var host = "http://api.dawlatplus.com/api/v1/";
 // var host = process.env.API_URL
 
 
