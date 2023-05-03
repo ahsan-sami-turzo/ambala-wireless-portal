@@ -21,7 +21,13 @@
 
             <b-card-text class="mb-0">
               <h5>API Documentation</h5>
-              <p class="font-scale-10">You can find the API documentation here:  <span class="f-w-600"><a href="https://documenter.getpostman.com/view/23406836/2s8YYLKh9i" target="_blank">https://documenter.getpostman.com/view/23406836/2s8YYLKh9i</a></span></p>
+              <p class="font-scale-10">You can find the API documentation here:
+                <span class="f-w-600">
+                  <a :href="POSTMAN_DOCUMENTATION_URL" target="_blank">
+                    {{ POSTMAN_DOCUMENTATION_URL }}
+                  </a>
+                </span>
+              </p>
 
 
             </b-card-text>
@@ -52,27 +58,25 @@
 import {mapState} from "vuex";
 
 export default {
-  data() {
-    return {}
 
+  mounted() {
+    console.log('mounted...', process.env.VUE_APP_POSTMAN_DOCUMENTATION_URL)
+  },
+
+  data() {
+    return {
+      POSTMAN_DOCUMENTATION_URL: process.env.VUE_APP_POSTMAN_DOCUMENTATION_URL
+    }
   },
 
   computed: {
     ...mapState('documentation', ["documents", "documentsError", "documentsLoading", "submitError", "submitSuccess", "submitLoading"]),
-
-
-
   },
   created() {
     this.$store.dispatch('documentation/fetchDocuments',{status:0})
-
-
-
   },
   watch: {
-
     documents(newValue, oldValue) {
-
     }
   },
   methods:{

@@ -1,8 +1,9 @@
 // var host = "https://dev-api.ambalawireless.com/api/v1/";
-var host = "https://api.ambalawireless.com/api/v1/";
+// var host = "https://api.ambalawireless.com/api/v1/";
 // var host = "http://api.dawlatplus.com/api/v1/";
-// var host = process.env.API_URL
+ var host = process.env.VUE_APP_API_URL
 
+console.log('APIPath.js...', process.env.VUE_APP_API_URL, host)
 
 module.exports = {
     V1API: {
